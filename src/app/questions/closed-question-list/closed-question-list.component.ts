@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {QuestionsRepositoryMock} from "../../injectable/questions-repository-mock";
 import {ClosedQuestion} from "../model/closed-question.model";
 
@@ -10,15 +10,33 @@ import {ClosedQuestion} from "../model/closed-question.model";
 export class ClosedQuestionListComponent implements OnInit {
 
   questions: ClosedQuestion[];
+  submitted: boolean;
 
   constructor(
     private questionsRepository: QuestionsRepositoryMock
   ) {
     this.questions = [];
+    this.submitted = false;
   }
 
   ngOnInit(): void {
     this.questions = this.questionsRepository.getRandomClosedQuestions(10);
+  }
+
+  submitAnswers(): void {
+    this.calculateClosedQuestionsScore();
+    this.submitted = true;
+  }
+
+  calculateClosedQuestionsScore(): number {
+    let ret = 0;
+    this.questions.forEach(q => {
+      if (q.selected === q.correctAnswer) {
+        ret++;
+      }
+    });
+    console.log('dupa: ' + ret);
+    return ret;
   }
 
 }

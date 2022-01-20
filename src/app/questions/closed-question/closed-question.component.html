@@ -1,1 +1,9 @@
-<p>closed-question works!</p>
+<div>
+  <p>{{index + 1}}. {{question.content}}</p>
+  <div id="answers" *ngFor="let answer of question.answers; let i = index">
+    <label for="answer{{i}}" [class.answer-right]="submitted">
+      <input id="answer{{i}}" name="answers{{this.index}}" type="radio" (click)="onSelectAnswer(i)"/>
+      {{answer}}
+    </label>
+  </div>
+</div>

@@ -1,4 +1,9 @@
 <div class="questions-div">
-  <p>closed-questions works!</p>
-
+  <div *ngFor="let q of questions; let i = index">
+    <app-closed-question
+      [question]="q"
+      [index]="i"
+    ></app-closed-question>
+  </div>
+  <button (click)="calculateClosedQuestionsScore()">SUBMIT</button>
 </div>
