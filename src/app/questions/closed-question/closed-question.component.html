@@ -1,7 +1,9 @@
 <div>
   <p>{{index + 1}}. {{question.content}}</p>
   <div id="answers" *ngFor="let answer of question.answers; let i = index">
-    <label for="answer{{i}}" [class.answer-right]="submitted">
+    <label for="answer{{i}}"
+           [class.answer-right]="question.submitted && question.correctAnswer == i"
+           [class.answer-wrong]="question.submitted && question.correctAnswer != question.selected && question.selected == i">
       <input id="answer{{i}}" name="answers{{this.index}}" type="radio" (click)="onSelectAnswer(i)"/>
       {{answer}}
     </label>

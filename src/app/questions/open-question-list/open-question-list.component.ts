@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {OpenQuestion} from "../model/open-question.model";
+import {QuestionsRepositoryMock} from "../../injectable/questions-repository-mock";
 
 @Component({
   selector: 'app-open-question-list',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpenQuestionListComponent implements OnInit {
 
-  constructor() { }
+  questions: OpenQuestion[];
+
+  constructor(
+    private questionsRepository: QuestionsRepositoryMock
+  ) {
+    this.questions = [];
+  }
 
   ngOnInit(): void {
+    this.questions = this.questionsRepository.getRandomOpenQuestions(2);
+  }
+
+  submitAnswers(): void {
+    this.questions.forEach(q => q.submitted = true);
   }
 
 }

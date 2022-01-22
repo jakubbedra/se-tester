@@ -1,3 +1,9 @@
 <div class="questions-div">
-  <p>open-questions works!</p>
+  <h1>Część otwarta:</h1>
+  <div *ngFor="let q of questions; let i = index;">
+    <app-open-question
+      [question]="q"
+      [index]="i"
+    ></app-open-question>
+  </div>
 </div>

@@ -1,0 +1,16 @@
+.exam {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.ui-button {
+  width: 50%;
+  height: 50px;
+  background-color: #202020;
+  color: white;
+}
+
+.ui-button:hover {
+  background-color: #323232;
+}

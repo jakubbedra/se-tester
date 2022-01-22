@@ -10,22 +10,22 @@ import {ClosedQuestion} from "../model/closed-question.model";
 export class ClosedQuestionListComponent implements OnInit {
 
   questions: ClosedQuestion[];
-  submitted: boolean;
+  score: number;
 
   constructor(
     private questionsRepository: QuestionsRepositoryMock
   ) {
     this.questions = [];
-    this.submitted = false;
+    this.score = 0;
   }
 
   ngOnInit(): void {
-    this.questions = this.questionsRepository.getRandomClosedQuestions(10);
+    this.questions = this.questionsRepository.getRandomClosedQuestions(15);
   }
 
   submitAnswers(): void {
-    this.calculateClosedQuestionsScore();
-    this.submitted = true;
+    this.questions.forEach(q => q.submitted = true);
+    this.score = this.calculateClosedQuestionsScore();
   }
 
   calculateClosedQuestionsScore(): number {

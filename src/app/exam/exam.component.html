@@ -1,0 +1,11 @@
+<div class="exam">
+  <app-closed-question-list></app-closed-question-list>
+</div>
+<div class="exam">
+  <app-open-question-list></app-open-question-list>
+</div>
+<div class="exam">
+  <button class="ui-button" (click)="onSubmit()" *ngIf="!submitted">SUBMIT</button>
+  <button class="ui-button" (click)="onReload()" *ngIf="submitted">NEW EXAM</button>
+</div>
+<!--(click)="calculateClosedQuestionsScore()"-->

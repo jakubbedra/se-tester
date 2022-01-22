@@ -1,9 +1,10 @@
 <div class="questions-div">
+  <h1>Część zamknięta:</h1>
+  <p>Wynik: {{score}}/15</p>
   <div *ngFor="let q of questions; let i = index">
     <app-closed-question
       [question]="q"
       [index]="i"
     ></app-closed-question>
   </div>
-  <button (click)="calculateClosedQuestionsScore()">SUBMIT</button>
 </div>

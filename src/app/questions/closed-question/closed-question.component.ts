@@ -14,6 +14,8 @@ export class ClosedQuestionComponent implements OnInit {
   @Input()
   index: number;
 
+  submitted: boolean;
+
   constructor() {
   }
 

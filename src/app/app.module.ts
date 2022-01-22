@@ -8,6 +8,7 @@ import { ClosedQuestionListComponent } from './questions/closed-question-list/cl
 import {QuestionsRepositoryMock} from "./injectable/questions-repository-mock";
 import { OpenQuestionComponent } from './questions/open-question/open-question.component';
 import { ClosedQuestionComponent } from './questions/closed-question/closed-question.component';
+import { ExamComponent } from './exam/exam.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ClosedQuestionComponent } from './questions/closed-question/closed-ques
     OpenQuestionListComponent,
     ClosedQuestionListComponent,
     OpenQuestionComponent,
-    ClosedQuestionComponent
+    ClosedQuestionComponent,
+    ExamComponent
   ],
   imports: [
     BrowserModule,
