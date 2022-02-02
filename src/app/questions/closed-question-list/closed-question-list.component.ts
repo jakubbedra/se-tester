@@ -11,16 +11,20 @@ export class ClosedQuestionListComponent implements OnInit {
 
   questions: ClosedQuestion[];
   score: number;
+  pointsPerQuestion: number;
+  totalQuestions: number;
 
   constructor(
     private questionsRepository: QuestionsRepositoryMock
   ) {
     this.questions = [];
     this.score = 0;
+    this.pointsPerQuestion = 1.5;
+    this.totalQuestions = 10;
   }
 
   ngOnInit(): void {
-    this.questions = this.questionsRepository.getRandomClosedQuestions(15);
+    this.questions = this.questionsRepository.getRandomClosedQuestions(this.totalQuestions);
   }
 
   submitAnswers(): void {
@@ -36,7 +40,7 @@ export class ClosedQuestionListComponent implements OnInit {
       }
     });
     console.log('dupa: ' + ret);
-    return ret;
+    return ret * this.pointsPerQuestion;
   }
 
 }

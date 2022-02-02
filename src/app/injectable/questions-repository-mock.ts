@@ -518,7 +518,7 @@ Cechą specyficzną oprogramowania w stosunku do innych technologii NIE jest:
 `, `
 -brak zużywania się oraz błędów przypadkowych
 `, `
--drzewiastość struktury
+-dowolność struktury
 `, `
 -łatwość szacowania czasochłonności
 `], 3),
@@ -535,7 +535,7 @@ W zakres projektu systemu (architektury wysokiego poziomu) NIE wchodzi:
 -wybór podejścia do zarządzania pojemnikami danych
 `], 0),
     new ClosedQuestion(`
-Matoda ATAM jest wykorzystywana do:
+Metoda ATAM jest wykorzystywana do:
 `,
       [`
 -działań wchodzących w skład analizy biznesowej
@@ -643,18 +643,6 @@ Wymaganiem określającym platformy sprzętowe i/lub programowe, na których sys
 -wymóg użyteczności
 `], 1),
     new ClosedQuestion(`
-Interesariusz systemu nie może:
-`,
-      [`
--niechęć do współpracy
-`, `
--brak uzasadnionego prawa do wpływania na taki system
-`, `
--należą do innej strony niż organizacja klienta
-`, `
--być nie-człowiekiem
-`], 1),
-    new ClosedQuestion(`
 Wymaganiem wskazującym najbardziej prawdopodobne kierunki dalszych rozszerzeń/modyfikacji systemu jest:
 `,
       [`
@@ -691,16 +679,16 @@ Efekt Hawthorne’a to:
 -sytuacja, w której rozmówca woli odpowiedź, niż przyznać się do braku wiedzy
 `], 2),
     new ClosedQuestion(`
-Business logic layer świadczy swoje usługi na:
+Warstwa logiki biznesowej świadczy swoje usługi na:
 `,
       [`
--warstwa danych
+-warstwę danych
 `, `
--brak innej warstwy
+-żadną inną warstwę
 `, `
--warstwa sieciowa
+-warstwę sieciowa
 `, `
--warstwa prezentacji
+-warstwę prezentacji
 `], 3),
     new ClosedQuestion(`
 Która z poniższych metod NIE jest zwinna (agile methodology):
@@ -772,7 +760,7 @@ Która z poniższych metod NIE jest techniką wydobywania wymagań?
 `, `
 -warsztaty
 `, `
--studium wykonalności (chyba)
+-studium wykonalności
 `], 3),
     new ClosedQuestion(`
 Warstwa logiki biznesowej jest zależna od:
@@ -799,7 +787,7 @@ Czy wymagania niefunkcjonalne mogą wpływać na decyzje dotyczące architektury
 -tylko dla systemów o krytycznym znaczeniu dla bezpieczeństwa i krytycznych dla misji
 `], 1),
     new ClosedQuestion(`
-Które NIE jest działalnością należącą do obszaru rozmieszczenia:
+Które z pojęć NIE jest związane z etapem wdrożenia:
 `,
       [`
 -migracja danych
@@ -811,12 +799,12 @@ Które NIE jest działalnością należącą do obszaru rozmieszczenia:
 -szkolenia dla użytkowników
 `], 1),
     new ClosedQuestion(`
-Należy spodziewać się najwyższego kosztu korekcji błędów w przypadku wykrytych podczas programowania:
+Należy spodziewać się najwyższego kosztu korekcji w przypadku błędów wykrytych podczas etapu:
 `,
       [`
 -użytkowanie i konserwacja
 `, `
--definition
+-definicja
 `, `
 -budowa
 `, `
@@ -836,7 +824,7 @@ Analiza wymagań NIE obejmuje:
 `], 2),
 
     new ClosedQuestion(`
-Który NIE jest głównym obszarem inżynierii wymagań:
+Które z poniższych NIE jest głównym obszarem inżynierii wymagań:
 `,
       [`
 -pozyskiwanie wymagań
@@ -896,7 +884,247 @@ Zmiany wprowadzone we wdrożonym i używanym systemie informatycznym wynikające
 -corrective
 `, `
 -preventive
-`], 0)
+`], 0),
+    new ClosedQuestion(`
+Wymaganie jakościowe o zapewnieniu że system nie będzie zagrażał docelowemu środowisku użytkownia (np. krzywdził ludzi, niszczył mienie) to:
+`,
+      [`
+przenośność
+`, `
+niezawodność
+`, `
+bezpieczeństwo
+`, `
+ochrona
+`], 2),
+    new ClosedQuestion(`
+Które z poniższych NIE jest obszarem zarządzania projektem?
+`,
+      [`
+-zarządzanie zasobami korporacji
+`, `
+-zarządzanie ryzykiem
+`, `
+-zarządzanie czasem
+`, `
+-zarządzanie zakresem/udziałowcami
+`], 0),
+    new ClosedQuestion(`
+Który z podobszarów inżynierii wymagań służy do potwierdzenia wymagań przez udziałowców?
+`,
+      [`
+-wydobycie wymagań
+`, `
+-zarządzanie wymaganiami
+`, `
+-walidacja wymagań
+`, `
+-analiza wymagań
+`], 2),
+    new ClosedQuestion(`
+W zakres projektu klas (projektu niskiego poziomu) wchodzi:
+`,
+      [`
+-synchronizacja dostępu do zasobów globalnych
+`, `
+-zdefiniowanie podsystemów i ich interfejsów
+`, `
+-wykorzystanie wzorców projektowych
+`, `
+-obsługa warunków granicznych
+`], 2),
+    new ClosedQuestion(`
+Wzorzec projektowy to:
+`,
+      [`
+-biblioteka dostarczająca zbiór pewnych konkretnych funkcji
+`, `
+-algorytm do rozwiązania konkretnego problemu
+`, `
+-poradnik jak projektować system w danym języku programowania lub frameworku
+`, `
+-ogólne rozwiązanie często występującego problemu w danym kontekście
+`], 3),
+    new ClosedQuestion(`
+Które z poniższych technik wydobywania wymagań wymaga moderatora?
+`,
+      [`
+-prototypowanie
+`, `
+-obserwacje
+`, `
+-wywiady
+`, `
+-warsztaty
+`], 3),
+    new ClosedQuestion(`
+Które z poniższych należy do projektu architektury (projektu systemu, projektu wysokiego poziomu)?
+`,
+      [`
+-obsługa warunków granicznych
+`, `
+-optymalizacja struktury klas
+`, `
+-przyjęcie zasad SOLID
+`, `
+-projektowanie algorytmów (i struktur danych do nich)
+`], 0),
+    new ClosedQuestion(`
+Jaki jest związek pomiędzy użytkownikami systemu a udziałowcami?
+`,
+      [`
+-każdy użytkownik to udziałowiec
+`, `
+-niektórzy użytkownicy to udziałowcy
+`, `
+-użytkownicy i udziałowcy to dwie różne, wzajemnie wykluczające się grupy
+`, `
+-każdy udziałowiec to użytkownik
+`], 0),
+    new ClosedQuestion(`
+Cechą specyficzną oprogramowania w stosunku do innych technologii NIE jest:
+`,
+      [`
+-dowolność struktury
+`, `
+-niestabilność wymagań
+`, `
+-zdominowany przez projektowanie
+`, `
+-niematerialny produkt
+`], 1),
+    new ClosedQuestion(`
+Scenariusz testowy to:
+`,
+      [`
+-sparametryzowany przypadek testowy
+`, `
+-specyfikacja warunków testu i czynności przygotowawczych
+`, `
+-sekwencja przypadków testowych
+`, `
+-wykonanie skryptu testowego
+`], 2),
+    new ClosedQuestion(`
+Stan lub działanie programu odbiegające od oczekiwań to:
+`,
+      [`
+-przypadek testowy
+`, `
+-defekt
+`, `
+-błąd
+`, `
+-awaria
+`], 2),
+    new ClosedQuestion(`
+Czym są hybrydowe procesy wytwarzania?
+`,
+      [`
+-procesy przystosowane do rozproszonych, międzynarodowych zespołów
+`, `
+-procesy bazujące na więcej niż jednym cyklu życia oprogramowania
+`, `
+-procesy łączące elementy agile i innych rodzajów metodyk
+`, `
+-procesy dedykowane do wytwarzania systemów zawierających moduły nie-softwarowe
+`], 2),
+    new ClosedQuestion(`
+Który z poniższych jest wzorcem projektowym?
+`,
+      [`
+-polimorfizm
+`, `
+-SOLID
+`, `
+-optimizer
+`, `
+-composite
+`], 3),
+    new ClosedQuestion(`
+Które z poniższych NIE jest obszarem wytwarzania oprogramowania?
+`,
+      [`
+-wdrożenie
+`, `
+-implementacja
+`, `
+-analiza
+`, `
+-zarządzanie zespołem
+`], 3),
+    new ClosedQuestion(`
+Projekt sieci firmy i jej elementów takich jak firewall, proxy, itp. są najlepiej zobrazowane przy użyciu:
+`,
+      [`
+-diagramów wdrożenia
+`, `
+-diagramów podsystemów
+`, `
+-diagramów komponentów
+`, `
+-diagramów współpracy
+`], 0),
+    new ClosedQuestion(`
+Który z poniższych jest modelem iteracyjnego cyklu wytwarzania?
+`,
+      [`
+-cowboy coding
+`, `
+-V
+`, `
+-prototypowanie
+`, `
+-waterfall
+`], 2),
+    new ClosedQuestion(`
+Utrzymanie oprogramowania to obszar dedykowany do:
+`,
+      [`
+-debugowania i poprawiania defektów
+`, `
+-zarządzania konfiguracją
+`, `
+-wprowadzania zmian w systemie IT po jego wdrożeniu
+`, `
+-monitorowaniu jakości metryk działającego systemu
+`], 2),
+    new ClosedQuestion(`
+Które z poniższych NIE jest kategorią wzorców projektowych?
+`,
+      [`
+-zachowań (behavioral)
+`, `
+-funkcjonalne (functional)
+`, `
+-konstrukcyjne (creational)
+`, `
+-strukturalne (structural)
+`], 1),
+    new ClosedQuestion(`
+Wymaganie wyrażające oczekiwaną ilość użytkowników jednocześnie korzystających z systemu lub/i oczekiwanej ilości danych to wymaganie:
+`,
+      [`
+-wydajność
+`, `
+-elastyczność
+`, `
+-użyteczność
+`, `
+-dostępność
+`], 0),
+    new ClosedQuestion(`
+Zautomatyzowany przypadek testowy to:
+`,
+      [`
+-plan testowania
+`, `
+-scenariusz testowy
+`, `
+-raport testu
+`, `
+-skrypt testowy
+`], 3)
   ];
 
   openQuestions: OpenQuestion[] = [
@@ -1066,6 +1294,19 @@ Persona: fikcyjna osoba posiadająca imię i nazwisko, a czasami nawet głębsze
 Testy użyteczności:
 -> testy eksperckie: ukierunkowane na typowo popełniane błędy, dokonywane na podstawie zasad projektowania UI (np. heurystyk Nielsena)
 -> obserwacja pracy użytkowników: zdefiniowanie zadań, poziomy osiągnięć, zbieranie opinii, bezpośrednia obserwacja
+
+Scenariusze użycia: stosowane przy testach użyteczności z kontrolowaną pracą użytkowników. Scenariusze definiują zadania, które powinni wykonać w ramach sesji pracy użytkownicy. Powinny obejmować typowe czynności wykonywane przy pracy z systemem uzasadnione z biznesowego punktu widzenia.
+
+Rejestracja wideo: użytkownik jest nagrywany podczas pracy z systemem (np. równocześnie ekran i kamerka skierowana na użytkownika). Pozwala to na poźniejsze przeanalizowanie interakcji i napotkanych problemów.
+
+Clicktracking: mapa cieplna (heat map). Kod skryptowy dodawany do źródeł stron pozwalający na obserwacje tego ile gdzie było kliknięć.
+
+Eyetracking: obserwacja wzroku użytkownika systemu (gdzie patrzył podczas korzystania z systemu). Metoda ta wymaga specjalnego sprzętu.
+
+Testy A/B: porównanie 2 (lub więcej) wersji produktu pod względem określonych metryk, na przykład uśredniona ocena użytkownika. Szczególnie popularne dla serwisów internetowych.
+-> faktyczni użytkownicy przekierowywani do różnych wersji systemu
+-> mierzony jest współczynnik konwersji, czyli ile % użytkowników zrobiło to, czego chciał właściciel serwisu (np.: kupienie produktu, przeczytanie postów, … )
+
 `),
     new OpenQuestion(`
 Wymienić i krótko opisać obszary zarządzania projektem. [wystarczy 7]
@@ -1418,7 +1659,7 @@ c)
 -testy jednostkowe
 -testy akceptacyjne
 
-d) 1: projekt architektury; 2: testy integracyjne
+d) 1: testy systemowe; 2: testy akceptacyjne
 `),
     new OpenQuestion(`
 Testowanie:
@@ -1543,10 +1784,100 @@ Narzędzia Build Automation: automatyzacja przekształcania kodu źródłowego w
 Narzędzia Continuous Integration: za każdym razem gdy dev przesyła kod do repo, odbywa się automatyczne budowanie, uruchomienie, testy (jednostkowe ale mogą być też integracyjne), możliwe też zabiegi QA (np. pomiary wydajności)
 
 IDE: (Zintegrowane Środowisko Deweloperskie) kompleksowe podstawowe wsparcie dewelopera: edytor kodu, kompilator, debugger, profiler, analiza statyczna, generator dokumentacji, wsparcie przy testowaniu, możliwość tworzenia modeli, zarządzanie konfiguracją poprzez kontrolę wersji, projektowanie GUI
+`),
+    new OpenQuestion(`
+Wymień i krótko opisz 7 wybranych heurystyk Nielsena.
+`, `
+1. Widoczny status systemu - w każdym momencie system powinien informować użytkownika o tym co się dzieje i co może/powinien zrobić za pomocą sensownych komunikatów. Przykładowo: wyposażenie systemu w paski postępu (lub chociaż listy zadań aktualnie wykonywanych i tych wymagających ukończenia).
+
+2. Zgodność systemu ze światem rzeczywistym - stosowanie odpowiednich metafor i odniesień do świata rzeczywistego. Antyprzykład: wrzucanie dyskietki do kosza w celu jej wysunięcia (użytkownik może pomyśleć że w ten sposób skasuje dane)
+
+3. Kontrola i wybór po stronie użytkownika - użytkownik musi mieć możliwość świadomego dokonania wyboru. Wsparcie dla akcji typu undo i redo, w razie pomyłki zapewnienie wyjścia awaryjnego. Antyprzykład: nie dało się kiedyś zapisać pustego pliku w notatniku.
+
+4.  Spójność i zgodność ze standardami - zgodność ze standardami związanymi z wykorzystaną technologią, spójność pod względem wizualnym, kolorystyki, wyglądu apki/serwisu
+
+5. Zapobieganie błędom - zamiast reagować na błędy, lepiej jest im zapobiegać na przykład blokując niedostępne opcje (tak żeby użytkownik ich w ogóle nie mógł wybrać)
+
+6. Wybór zamiast pamiętania informacji - ograniczenie do minimum informacji które trzeba pamiętać, jak największa ilość obiektów, opcji, poleceń: ikony, podręczne menu, menu kontekstowe
+
+7. Elastyczność i możliwość optymalizacji - rozróżnienie n00ba i pr0, zapewnienie skrótów przyspieszających pracę dla ekspertów, ukrycie ich przed nowicjuszami. Możliwość dostosowania interfejsu do własnych potrzeb.
+
+8. Estetyka i umiar - w skrócie: nasranie pierdyliardem rzeczy na jednym ekranie nie jest dobrą praktyką. Nie powinno się prezentować nadmiarowych, niepotrzebnych i bardzo rzadko wykorzystywanych informacji. Komunikaty powinny być czytelne.
+
+9. Wsparcie w razie błędów - opisowe komunikaty o błędach (a nie kody błędu albo wykorzystywanie programistycznego słownictwa) takie żeby użytkownik je zrozumiał, oraz sugestia rozwiązania problemu.
+
+10. Pomoc i dokumentacja - informacja w niej zawarta powinna być łatwa do wyszukania, związana z bieżącym/określonym zadaniem, zawierać listy kroków do wykonania w określonych sytuacjach.
+`),
+    new OpenQuestion(`
+Wydobywanie wymagań.
+
+Jakie działania poprzedzające samą pracę z udziałowcami należy wykonać w ramach wydobywania wymagań?
+Dla każdego z poniższych problemów zaproponuj technikę wydobywania wymagań, którą Twoim zdaniem najlepiej zastosować w takiej sytuacji i przekonująco uzasadnij swoje propozycje.
+
+A - Różni udziałowcy zgłaszają wzajemne sprzeczne wymagania i każdy zostaje przy swoim zdaniu.
+
+B - Zespół realizujący projekt kompletnie nie ma wiedzy o dziedzinie biznesowej klienta, a reprezentanci klienta nie są w stanie przekazać im tych informacji.
+
+C - Udziałowcy nie są w stanie skonkretyzować swoich wymagań dotyczących funkcjonalności systemu i swojej interakcji z nim.
+
+D - Organizacja klienta określiła cele biznesowe, ale brakuje pomysłów na to, jakie nowe procesy biznesowe i usługi systemu pozwoliłyby na osiągnięcie tych celów.
+`, `
+Działania poprzedzające pracę z udziałowcami:
+-identyfikacja udziałowców
+-określenie reprezentantów udziałowców od których będziemy wydobywać te wymagania
+-dotarcie do wybranych reprezentantów
+
+A: Obserwacje - dzięki obserwowaniu pracy przyszłych użytkowników będziemy w stanie dotrzeć do tego które zgłaszane wymagania są tymi właściwymi
+
+B: Studia dziedzinowe - pozyskiwanie wiedzy na temat danej dziedziny biznesowej z dostępnych źródeł, np. dokumentów
+
+C: Prototypowanie - udziałowcy dostaną coś bardziej namacalnego i dadzą feedback co im się podoba a co nie.
+
+D: Burze mózgów - są to spotkania grupy interesariuszy wg określonego scenariusza ukierunkowane właśnie na generowanie nowych pomysłów.
+`),
+    new OpenQuestion(`
+Wizja systemu.
+
+Wymienić zagadnienia (7), które powinny zostać opisane w Wizji Systemu. Scharakteryzować każde z tych zagadnień, podając jakie informacje należałoby dla nich określić i zawrzeć w dokumencie Wizji.
+`, `
+1. Opis organizacji - opis organizacji/działu/otoczenia, dla którego ma być tworzony system. Zakładamy, że chodzi o konkretną organizację a nie zbiór organizacji (np. politechnika gdańska zamiast uczelnia wyższa)
+-opis zawierający konkretne dane, również liczbowe, powiązania z innymi organizacjami, główne procesy, profil działalności
+-perspektywy dalszej działalności, rozwoju
+-struktura organizacyjna, podział obowiązków i odpowiedzialności
+-identyfikacja problemów w aktualnym funkcjonowaniu, które można wyeliminować lub ograniczyć wprowadzając system
+-ogólna koncepcja systemu IT
+
+2. Cele systemu - jakie korzyści oczekuje odbiorca systemu po jego wdrożeniu?
+
+3. Interesariusze systemu - i ich punkty widzenia, do interesariuszy zalicza się każdy podmiot niekoniecznie ożywiony, mający uzasadnione prawo do wywarcia wpływu na powstający system. Wymieniamy interesariusza oraz opisujemy czego oczekuje od systemu.
+
+4. Kontekst systemu - użytkownicy i systemy zewnętrzne - użytkownicy i ich specyfikacja: kto będzie korzystał z systemu, w jakich warunkach na co należy mu zapewnić w systemie. Inne systemy współpracujące: zakres współpracy, funkcje udostępniane lub wywoływane (API), interfejsy, formaty danych, współdzielone dane.
+
+5. Zakres funkcjonalności - ogólne wymienienie poszczególnych funkcji dostępnych dla użytkowników.
+
+6. Wymagania jakościowe - wymagania formułowane w sposób konkretny, mierzalny ale bez narzucania określonych rozwiązań.
+
+7. Ograniczenia - dot. projektu i zasobów, np.: pełny system musi być dostarczony i wdrożony do dnia 02.04.2005.
+dot. produktu np.: w celu spójności z polityką technologiczną klienta, warstwa danych systemu musi być oparta o MS SQL.
 `)
   ];
 
   constructor() {
+    let json1 = JSON.stringify(this.openQuestions);
+    let json2 = JSON.stringify(this.closedQuestions);
+    //this.download('open_questions.json', json1);
+    //this.download('closed_questions.json', json2);
+  }
+
+  private download(filename, text) {
+    let element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
   }
 
   public getRandomClosedQuestions(amount: number): ClosedQuestion[] {
